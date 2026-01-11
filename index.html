@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Fetcher</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Pokemon Fetcher</h1>
+        <input type="text" id="inputbox" placeholder="Enter a Pokemon name">
+        <button id = "searchbox"onclick="fetchData()">Fetch Pokemon Data</button><br>
+    </div>
+    <div class="pokemon-display">
+        <img src="" alt="imagesprite" id="imageSprite" style="display: none;">
+    </div>
+    <div class="pokemon-info">
+        <h2 id="pokemon-name">Pokemon info</h2>
+        <p id="pokemon-id">#---</p>
+        <div class="stats">
+            <h3>Stats</h3>
+            <div id="stats">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
