@@ -87,7 +87,7 @@ Improve animations and transitions
 
 📸 Preview
 
-<img width="1913" height="912" alt="image" src="https://github.com/user-attachments/assets/363b9eb0-e5b9-4241-aa61-55fe159d6654" />
+![Pokemon Fetcher Preview](./assets/preview.png)
 
 
 🧑‍💻 Author
