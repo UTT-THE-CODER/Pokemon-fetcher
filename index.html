@@ -9,22 +9,35 @@
 </head>
 
 <body>
-    <div class="header">
-        <h1>Pokemon Fetcher</h1>
-        <input type="text" id="inputbox" placeholder="Enter a Pokemon name">
-        <button id = "searchbox"onclick="fetchData()">Fetch Pokemon Data</button><br>
-    </div>
-    <div class="pokemon-display">
-        <img src="" alt="imagesprite" id="imageSprite" style="display: none;">
-    </div>
-    <div class="pokemon-info">
-        <h2 id="pokemon-name">Pokemon info</h2>
-        <p id="pokemon-id">#---</p>
-        <div class="stats">
-            <h3>Stats</h3>
-            <div id="stats">
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1>Pokédex</h1>
+                <p class="subtitle">Search for your favorite Pokemon</p>
             </div>
-        </div>
+            <div class="search-box">
+                <input type="text" id="inputbox" placeholder="Enter Pokemon name or ID..." aria-label="Pokemon search input">
+                <button id="searchbox" onclick="fetchData()" aria-label="Search for Pokemon">Search</button>
+            </div>
+            <p id="loading" class="loading-text"></p>
+        </header>
+
+        <main class="pokemon-card" id="pokemonCard">
+            <div class="pokemon-display">
+                <img src="" alt="Pokemon artwork" id="imageSprite" style="display: none;">
+            </div>
+            <div class="pokemon-info">
+                <div class="pokemon-header">
+                    <h2 id="pokemon-name">Pokédex</h2>
+                    <p id="pokemon-id">#---</p>
+                </div>
+                <div id="types" class="types-container"></div>
+                <div class="stats-section">
+                    <h3>Base Stats</h3>
+                    <div id="stats" class="stats-list"></div>
+                </div>
+            </div>
+        </main>
     </div>
 
     <script src="script.js"></script>
